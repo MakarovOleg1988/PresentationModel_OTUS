@@ -8,20 +8,33 @@ namespace UI
         public string CurrentcyNameCharacter;
         public string CurrentcyCatchPhraseCharacter;
         public Sprite CurrentcyIconCharacter;
-        public long CurrentcyLevelCharacter;
-        public event Action OnValueChanged; 
+        public event Action<string> OnNameChanged;
+        public event Action<string> OnCatchPhraseChanged;
+        public event Action<Sprite> OnIconChanged; 
 
-        public CharacterParametersStorage(string baseNameCharacter, string baseCatchPhrase, Sprite baseIconCharacter, long baseLevelCharacter)
+        public CharacterParametersStorage(string baseNameCharacter, string baseCatchPhrase, Sprite baseIconCharacter)
         {
             CurrentcyNameCharacter = baseNameCharacter;
             CurrentcyCatchPhraseCharacter = baseCatchPhrase;
             CurrentcyIconCharacter = baseIconCharacter;
-            CurrentcyLevelCharacter = baseLevelCharacter;
         }
 
-        public void ChangeLevel()
+        public void ChangeName(string name)
         {
-            
+            CurrentcyNameCharacter = name;
+            OnNameChanged?.Invoke(name);
+        }
+
+        public void ChangeCatchPhrase(string catchPhrase)
+        {
+            CurrentcyCatchPhraseCharacter = catchPhrase;
+            OnCatchPhraseChanged?.Invoke(catchPhrase);
+        }
+
+        public void ChangeIcon(Sprite icon)
+        {
+            CurrentcyIconCharacter = icon;
+            OnIconChanged?.Invoke(icon);
         }
     }
 }

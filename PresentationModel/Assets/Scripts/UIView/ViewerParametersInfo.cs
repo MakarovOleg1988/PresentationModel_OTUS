@@ -5,19 +5,17 @@ using Zenject;
 
 namespace UI
 {
-    public class BaseViewerParamerers : MonoBehaviour
+    public class ViewerParametersInfo : MonoBehaviour
     {
         private CharacterParametersStorage _characterParametersStorage;
         [SerializeField] private TextMeshProUGUI _currentcyNameText;
         [SerializeField] private TextMeshProUGUI _currentcyCatchPhraseText;
         [SerializeField] private Image _currentcyIconImage;
-        [SerializeField] private TextMeshProUGUI _currentcyLevelCharacterText;
 
         [Inject]
         public void Constract(CharacterParametersStorage characterParametersStorage)
         {
             _characterParametersStorage = characterParametersStorage;
-
         }
 
         private void LateUpdate()
@@ -32,9 +30,6 @@ namespace UI
 
             Image icon = _currentcyIconImage.GetComponent<Image>();
             icon.sprite = _characterParametersStorage.CurrentcyIconCharacter;
-
-            string level = _characterParametersStorage.CurrentcyLevelCharacter.ToString();
-            _currentcyLevelCharacterText.text = $"Level: {level}";
         }
     }
 }

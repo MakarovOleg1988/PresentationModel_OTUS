@@ -7,16 +7,15 @@ namespace UI
         public string BaseNameCharacter { get; }
         public string BaseCatchPhrase { get; }
         public Sprite BaseIconCharacter { get; }
-        public long BaseLevelCharacter { get; }
     }
 
         public interface IBaseStats
     {
-        public long MoveSpeed { get; }
-        public long Stamina { get; }
-        public long Dexterity { get; }
-        public long Intelligence { get; }
-        public long Damage { get; }
-        public long Regeneration { get; }
+        public long BaseMoveSpeed { get; }
+        public long BaseStamina { get; }
+        public long BaseDexterity { get; }
+        public long BaseIntelligence { get; }
+        public long BaseDamage { get; }
+        public long BaseRegeneration { get; }
     }
 }

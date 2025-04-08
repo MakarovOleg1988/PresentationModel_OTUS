@@ -1,0 +1,241 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests-Editor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests-Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests-Editor.csproj",
+        "projectName": "Zenject-IntegrationTests-Editor",
+        "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests-Editor.csproj",
+        "packagesPath": "C:\\Users\\makar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Temp\\obj\\Debug\\Zenject-IntegrationTests-Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\makar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests.csproj"
+              },
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj"
+              },
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests.csproj",
+        "projectName": "Zenject-IntegrationTests",
+        "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\makar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Temp\\obj\\Debug\\Zenject-IntegrationTests\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\makar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj"
+              },
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj",
+        "projectName": "Zenject-TestFramework",
+        "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject-TestFramework.csproj",
+        "packagesPath": "C:\\Users\\makar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Temp\\obj\\Debug\\Zenject-TestFramework\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\makar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj": {
+                "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj",
+        "projectName": "Zenject",
+        "projectPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Zenject.csproj",
+        "packagesPath": "C:\\Users\\makar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makar\\Source\\PresentationModel\\PresentationModel\\Temp\\obj\\Debug\\Zenject\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\makar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

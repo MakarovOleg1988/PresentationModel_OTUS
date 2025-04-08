@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: PaladinStats
   m_EditorClassIdentifier: 
   BaseStatsCharacter:
-    _moveSpeed: 0
-    _stamina: 0
-    _dexterity: 0
-    _intelligence: 0
-    _damage: 0
-    _regeneration: 0
+    _baseMoveSpeed: 5
+    _baseStamina: 25
+    _baseDexterity: 15
+    _baseIntelligence: 20
+    _baseDamage: 5
+    _baseRegeneration: 0
   BaseParametersCharacter:
     _baseNameCharacter: Uter
     _baseCatchPhrase: I am the best Warrior in the Light Kingdom!
     _baseIconCharacter: {fileID: 21300000, guid: 954d79ad0f5124da59b33552ab47a641, type: 3}
     _baseLevelCharacter: 1
+    _baseExperienceCharacter: 150

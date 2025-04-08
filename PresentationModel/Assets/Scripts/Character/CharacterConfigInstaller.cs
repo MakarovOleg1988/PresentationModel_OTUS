@@ -20,19 +20,19 @@ namespace UI
     [Serializable]
     public class BaseStatsCharacter: IBaseStats
     {
-        [SerializeField] private long _moveSpeed;
-        [SerializeField] private long _stamina;
-        [SerializeField] private long _dexterity;
-        [SerializeField] private long _intelligence;
-        [SerializeField] private long _damage;
-        [SerializeField] private long _regeneration;
+        [SerializeField] private long _baseMoveSpeed;
+        [SerializeField] private long _baseStamina;
+        [SerializeField] private long _baseDexterity;
+        [SerializeField] private long _baseIntelligence;
+        [SerializeField] private long _baseDamage;
+        [SerializeField] private long _baseRegeneration;
 
-        public long MoveSpeed => _moveSpeed;
-        public long Stamina => _stamina;
-        public long Dexterity => _dexterity;
-        public long Intelligence => _intelligence;
-        public long Damage => _damage;
-        public long Regeneration => _regeneration;
+        public long BaseMoveSpeed => _baseMoveSpeed;
+        public long BaseStamina => _baseStamina;
+        public long BaseDexterity => _baseDexterity;
+        public long BaseIntelligence => _baseIntelligence;
+        public long BaseDamage => _baseDamage;
+        public long BaseRegeneration => _baseRegeneration;
     }
 
     [Serializable]
@@ -41,11 +41,9 @@ namespace UI
         [SerializeField] private string _baseNameCharacter;
         [SerializeField] private string _baseCatchPhrase;
         [SerializeField] private Sprite _baseIconCharacter;
-        [SerializeField] private long _baseLevelCharacter;
 
         public string BaseNameCharacter => _baseNameCharacter;
         public string BaseCatchPhrase => _baseCatchPhrase;
         public Sprite BaseIconCharacter => _baseIconCharacter;
-        public long BaseLevelCharacter => _baseLevelCharacter;
     }
 }
