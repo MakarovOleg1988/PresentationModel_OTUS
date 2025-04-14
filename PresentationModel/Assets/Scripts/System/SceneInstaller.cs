@@ -6,10 +6,13 @@ namespace UI
     {
         [Inject] private BaseParametersCharacter _baseParam;
         [Inject] private BaseStatsCharacter _baseStats;
+        [Inject] private BaseExperienceCharacter _baseExperienceCharacter;
 
         public override void InstallBindings()
         {
-            Container.Bind<CharacterExperience>().AsSingle();
+            Container.Bind<CharacterExperience>()
+            .AsSingle()
+            .WithArguments(_baseExperienceCharacter.BaseExperience, _baseExperienceCharacter.BaseLevel);
 
             ViewerExperienceInfo view = FindObjectOfType<ViewerExperienceInfo>(); 
 

@@ -9,16 +9,18 @@ namespace UI
     {
         [SerializeField] public BaseStatsCharacter BaseStatsCharacter;
         [SerializeField] public BaseParametersCharacter BaseParametersCharacter;
+        [SerializeField] public BaseExperienceCharacter BaseExperienceCharacter;
 
         public override void InstallBindings()
         {
             Container.Bind<BaseStatsCharacter>().FromInstance(BaseStatsCharacter).AsSingle();
             Container.Bind<BaseParametersCharacter>().FromInstance(BaseParametersCharacter).AsSingle();
+            Container.Bind<BaseExperienceCharacter>().FromInstance(BaseExperienceCharacter).AsSingle();
         }
     }
 
     [Serializable]
-    public class BaseStatsCharacter: IBaseStats
+    public class BaseStatsCharacter : IBaseStats
     {
         [SerializeField] private long _baseMoveSpeed;
         [SerializeField] private long _baseStamina;
@@ -36,7 +38,7 @@ namespace UI
     }
 
     [Serializable]
-    public class BaseParametersCharacter: IBaseParameters
+    public class BaseParametersCharacter : IBaseParameters
     {
         [SerializeField] private string _baseNameCharacter;
         [SerializeField] private string _baseCatchPhrase;
@@ -45,5 +47,15 @@ namespace UI
         public string BaseNameCharacter => _baseNameCharacter;
         public string BaseCatchPhrase => _baseCatchPhrase;
         public Sprite BaseIconCharacter => _baseIconCharacter;
+    }
+
+    [Serializable]
+    public class BaseExperienceCharacter : IBaseExp
+    {
+        [SerializeField] private int _baseExpCharacter;
+        [SerializeField] private int _baseLevelCharacter;
+
+        public int BaseExperience => _baseExpCharacter;
+        public int BaseLevel => _baseLevelCharacter;
     }
 }

@@ -23,5 +23,6 @@ MonoBehaviour:
     _baseNameCharacter: Uter
     _baseCatchPhrase: I am the best Warrior in the Light Kingdom!
     _baseIconCharacter: {fileID: 21300000, guid: 954d79ad0f5124da59b33552ab47a641, type: 3}
-    _baseLevelCharacter: 1
-    _baseExperienceCharacter: 150
+  BaseExperienceCharacter:
+    _baseExpCharacter: 0
+    _baseLevelCharacter: 0

@@ -5,7 +5,7 @@ namespace UI
 {
     public sealed class ExperienceObserver : IInitializable, IDisposable
     {
-        [Inject] private readonly CharacterExperience _characterExperience;
+        [Inject] private CharacterExperience _characterExperience;
         private readonly ViewerExperienceInfo _viewerExperienceInfo;
 
         public ExperienceObserver(ViewerExperienceInfo viewerExperienceInfo)
@@ -18,6 +18,15 @@ namespace UI
             _characterExperience.OnCurrencyExpChanged += CurrencyExpChanged;
             _characterExperience.OnRequiredExpChanged += RequiredExpChanged;
             _characterExperience.OnLevelUp += LevelUp;
+
+            SetBaseData();
+        }
+
+        private void SetBaseData()
+        {
+            _viewerExperienceInfo.UpdateCurrencyExp(_characterExperience.CurrentcyExperience);
+            _viewerExperienceInfo.UpdateLevel(_characterExperience.CurrentcyLevelCharacter);
+            _viewerExperienceInfo.UpdateRequiredExp(_characterExperience.RequiredExperience);
         }
 
         private void CurrencyExpChanged(int exp)
@@ -27,7 +36,7 @@ namespace UI
 
         private void RequiredExpChanged(int exp)
         {
-            _viewerExperienceInfo.UpdateCurrencyExp(exp);
+            _viewerExperienceInfo.UpdateRequiredExp(exp);
         }
 
         private void LevelUp(int level)

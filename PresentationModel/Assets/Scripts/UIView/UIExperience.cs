@@ -9,15 +9,16 @@ namespace UI
     {
         [Inject] private CharacterExperience _characterExperience;
         [SerializeField] private Button _expUpButton;
+        [SerializeField] private int _addedExp; 
 
         private void Start()
         {
-            _expUpButton.onClick.AddListener(Executive);
+            _expUpButton.onClick.AddListener(Executive);    
         }
 
         private void Executive()
         {
-            _characterExperience.AddExperience(10);
+            _characterExperience.AddExperience(_addedExp);
         }
 
         public void Dispose()

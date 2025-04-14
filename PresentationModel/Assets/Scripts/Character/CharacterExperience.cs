@@ -1,15 +1,17 @@
 using System;
+using Zenject;
 
 namespace UI
 {
     public sealed class CharacterExperience
     {
+        public int CurrentcyExperience { get; private set; }
         public int CurrentcyLevelCharacter;
-        public int CurrentExperience { get; private set; }
         public int RequiredExperience
         {
             get { return 100 * (CurrentcyLevelCharacter + 1); }
         }
+
         private long _boostValue = 1;
 
         public event Action<int> OnCurrencyExpChanged;
@@ -23,12 +25,18 @@ namespace UI
         public event Action<long> OnDamageChanged;
         public event Action<long> OnRegenerationChanged;
 
+        public CharacterExperience(int baseExp, int baseLevel)
+        {
+            CurrentcyExperience = baseExp;
+            CurrentcyLevelCharacter = baseLevel;
+        }
+
         public void AddExperience(int range)
         {
-            var exp = Math.Min(CurrentExperience + range, RequiredExperience);
+            var exp = Math.Min(CurrentcyExperience + range, RequiredExperience);
 
-            CurrentExperience = exp;
-            OnCurrencyExpChanged?.Invoke(CurrentExperience);
+            CurrentcyExperience = exp;
+            OnCurrencyExpChanged?.Invoke(CurrentcyExperience);
             OnRequiredExpChanged?.Invoke(RequiredExperience);
 
             LevelUp();
@@ -52,7 +60,7 @@ namespace UI
 
         public bool CanLevelUp()
         {
-            return CurrentExperience == RequiredExperience;
+            return CurrentcyExperience == RequiredExperience;
         }
     }
 }

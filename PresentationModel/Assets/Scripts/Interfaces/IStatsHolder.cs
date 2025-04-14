@@ -9,7 +9,7 @@ namespace UI
         public Sprite BaseIconCharacter { get; }
     }
 
-        public interface IBaseStats
+    public interface IBaseStats
     {
         public long BaseMoveSpeed { get; }
         public long BaseStamina { get; }
@@ -17,5 +17,12 @@ namespace UI
         public long BaseIntelligence { get; }
         public long BaseDamage { get; }
         public long BaseRegeneration { get; }
+    }
+
+    public interface IBaseExp
+    {
+        public int BaseExperience { get; }
+        public int BaseLevel { get; }
+
     }
 }
